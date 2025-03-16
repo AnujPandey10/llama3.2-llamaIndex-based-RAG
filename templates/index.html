@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windsor RAG - Local Document Assistant</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="app-title">
+                <h1>Windsor RAG</h1>
+                <p>Local Document Assistant</p>
+            </div>
+            
+            <div class="upload-section">
+                <h2>Upload Document</h2>
+                <p>Currently supporting PDF files</p>
+                <div class="file-upload">
+                    <input type="file" id="file-input" accept=".pdf" />
+                    <button id="upload-btn">Upload</button>
+                </div>
+                
+                <div id="processing-status" class="hidden">
+                    <h3>Processing Document</h3>
+                    <div class="progress-container">
+                        <div id="progress-bar" class="progress-bar"></div>
+                    </div>
+                    <p id="status-message">Initializing...</p>
+                </div>
+            </div>
+            
+            <div class="document-list">
+                <h2>Documents</h2>
+                <ul id="document-list">
+                    <!-- Documents will be listed here -->
+                    <li class="empty-message">No documents uploaded</li>
+                </ul>
+            </div>
+            
+            <div class="settings">
+                <h2>Settings</h2>
+                <div class="setting-item">
+                    <label for="rag-toggle">
+                        <input type="checkbox" id="rag-toggle" checked />
+                        <span>Use RAG for responses</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message system">
+                    <div class="message-content">
+                        <p>Hello! I'm your local document assistant powered by Llama3.2. I can help you chat or answer questions about your documents.</p>
+                        <p>Upload a PDF to get started with document Q&A, or just chat with me directly!</p>
+                    </div>
+                </div>
+                <!-- Chat messages will appear here -->
+            </div>
+            
+            <div class="chat-input-container">
+                <textarea id="chat-input" placeholder="Type your message here..."></textarea>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
