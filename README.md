@@ -21,7 +21,8 @@ Windsor RAG is a fast, local, offline RAG (Retrieval Augmented Generation) appli
 1. Clone this repository:
 ```
 git clone <repository-url>
-cd rag_windsor
+cd llama3.2-llamaIndex-based-RAG
+
 ```
 
 2. Install the required dependencies:
