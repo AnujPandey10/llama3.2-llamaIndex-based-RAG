@@ -1,6 +1,6 @@
-# Windsor RAG - Fast Local Offline RAG Application
+# llama3.2 based RAG - Fast Local Offline RAG Application
 
-Windsor RAG is a fast, local, offline RAG (Retrieval Augmented Generation) application that uses Ollama's Llama3.2 and LlamaIndex. It allows you to quickly process uploaded PDFs and query document content, as well as chat with the AI model even when no document is uploaded.
+THis RAG is a fast, local, offline RAG (Retrieval Augmented Generation) application that uses Ollama's Llama3.2 and LlamaIndex. It allows you to quickly process uploaded PDFs and query document content, as well as chat with the AI model even when no document is uploaded.
 
 ## Features
 
